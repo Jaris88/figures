@@ -26,10 +26,17 @@ a {
   background-color: rgb(190, 190, 190);
   border: 2px solid rgb(175,175,175);
   border-radius: 6px;
-  text-shadow: #666 .1em .1em .1em;
   box-shadow: 0 4px 2px rgba(0,0,0,.5);
 }
-
+.smooth {
+    background-color: chartreuse;
+    color: blue;
+    text-shadow: none;
+}
+.smooth:hover, .smooth:focus {
+    background-color: red;
+    color: white;
+}
 </style>
 
 
@@ -38,10 +45,10 @@ a {
 <body>
 
 <ul>
-  <li><a href="">Men</a></li>
-  <li><a href="">Women</a></li>
-  <li><a href="">Kids</a></li>
-  <li><a href="">SALE</a></li>
+  <li><a class="smooth" href="">Men</a></li>
+  <li><a class="smooth" href="">Women</a></li>
+  <li><a class="smooth" href="">Kids</a></li>
+  <li><a class="smooth" href="">SALE</a></li>
 </ul>
 
 </body>
