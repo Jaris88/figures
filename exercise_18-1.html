@@ -29,13 +29,15 @@ a {
   box-shadow: 0 4px 2px rgba(0,0,0,.5);
 }
 .smooth {
-    background-color: chartreuse;
-    color: blue;
-    text-shadow: none;
+    transition-property: background-color, letter-spacing, text-align;
+    transition-timing-function: ease-in-out;
+    transition-duration: 0.5s;
 }
 .smooth:hover, .smooth:focus {
     background-color: red;
     color: white;
+    letter-spacing: 5px;
+    text-align: left;
 }
 </style>
 
